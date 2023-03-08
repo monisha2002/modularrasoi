@@ -2,15 +2,19 @@ import "./App.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Home from "./components/Home";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Work from "./components/Work";
+
 function App() {
   return (
     <div className="App">
-      <Navbar sticky="top" />
+      <Router>
+        <Switch>
+          <Navbar sticky="top" />
 
-      <Footer />
+          <Route exact path="/work" component={Work} />
+        </Switch>
+      </Router>
     </div>
   );
 }

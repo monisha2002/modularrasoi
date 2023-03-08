@@ -528,7 +528,7 @@ p.accordion {
   transition: 0.4s;
   margin-bottom: 10px;
 }
-.space h2 {
+  .space h2 {
   font-family: "Zen Tokyo Zoo", cursive;
   margin-bottom: 40px;
   text-decoration-line: underline;
@@ -680,4 +680,9 @@ textarea {
   padding: 5px;
   background-color: #757575;
   color: #fff;
+}
+
+.hind img,
+.ozone img {
+  background-color: white;
 }

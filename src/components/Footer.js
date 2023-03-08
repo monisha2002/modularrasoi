@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
+import Work from "./Work";
 export default class Footer extends Component {
   render() {
     return (
@@ -61,15 +62,13 @@ export default class Footer extends Component {
                   </a>
                 </p>
                 <p>
-                  <a
-                    href={"/work"}
+                  <Link
+                    as={Link}
+                    to="/about"
                     className="navbar-item text-white"
-                    onClick={() =>
-                      this.toggleModal("Rental Objects With Current Rent")
-                    }
                   >
-                    Our Work
-                  </a>
+                    About Us
+                  </Link>
                 </p>
                 <p>
                   <a
@@ -79,7 +78,7 @@ export default class Footer extends Component {
                       this.toggleModal("Rental Objects With Current Rent")
                     }
                   >
-                    Product Range
+                    Our Work
                   </a>
                 </p>
                 <p>

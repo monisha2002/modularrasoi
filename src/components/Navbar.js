@@ -36,6 +36,9 @@ export default class NavbarComp extends Component {
                   <Nav.Link as={Link} to={"/"}>
                     <h4 className="linkText">Home</h4>
                   </Nav.Link>
+                  <Nav.Link as={Link} to={"/about"}>
+                    <h4 className="linkText">About Us</h4>
+                  </Nav.Link>
                   <Nav.Link as={Link} to={"/work"}>
                     <h4 className="linkText">Our Work</h4>
                   </Nav.Link>
@@ -44,9 +47,6 @@ export default class NavbarComp extends Component {
                   </Nav.Link>
                   <Nav.Link as={Link} to={"/faq"}>
                     <h4 className="linkText">FAQ's</h4>
-                  </Nav.Link>
-                  <Nav.Link as={Link} to={"/about"}>
-                    <h4 className="linkText">About Us</h4>
                   </Nav.Link>
                   <Nav.Link as={Link} to={"/contact"}>
                     <h4 className="linkText">Contact Us</h4>
