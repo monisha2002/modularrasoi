@@ -403,6 +403,7 @@ button.slide_from_right::after {
 
 .my-container .card:hover {
   height: 550px;
+  height: auto;
 }
 
 .my-container .card .imgBx {
